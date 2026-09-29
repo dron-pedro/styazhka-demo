@@ -223,3 +223,6 @@ body:has(> .v-page) { margin: 0; }
   .v-page [data-v-act="pan"] [data-v-stage] { overflow-x: auto; }
   .v-page [data-v-pan] { transform: none !important; }
 }
+
+/* Плавная прокрутка по якорным ссылкам меню (не при «уменьшить анимацию») */
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
